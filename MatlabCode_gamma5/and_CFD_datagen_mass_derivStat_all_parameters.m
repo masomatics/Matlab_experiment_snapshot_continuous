@@ -157,7 +157,7 @@ function [datmat, tilde_pys, derivative] = and_CFD_datagen_mass_derivStat_all_pa
         snaptime_now = snaptime_now + 1 ;  
 
                     if(max(tilde_pym(:)) > min(tilde_pym(:)))
-                        include = [include, snaptime_now]
+                        include = [include, snaptime_now];
                     end
         
         end 
