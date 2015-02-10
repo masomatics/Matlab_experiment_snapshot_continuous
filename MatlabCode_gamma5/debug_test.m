@@ -45,6 +45,8 @@ tic,
 %profile off
 deriv1 
 deriv2
+
+
 %%
 close all;
 N = 4
@@ -62,3 +64,13 @@ close all;
                         rnsource_debug, snapshots, timesample, N);
 deriv1
 close all;
+
+%% 
+tic,
+[datmat, tilde_pys, deriv2] = and_CFD_datagen_mass_derivStat_all_parameters_totVar...
+                        (initx, tend, theta0, sigV, sigW, num_timepts,...
+                        rnsource, snapshots, timesample, Ntry)  ;                 
+                    toc
+
+
+
